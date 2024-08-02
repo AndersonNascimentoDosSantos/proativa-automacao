@@ -61,9 +61,17 @@
 
 @layer base {
   * {
-    @apply border-border;
+    /* @apply border-border; */
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .divide-x-with-color {
+    @apply divide-x;
+    /* --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse))); */
+    border-right-color: #f66601!;
+    border-left-color: #f66601!;
   }
 }
